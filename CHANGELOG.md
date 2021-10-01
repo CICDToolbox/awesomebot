@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [v0.1.0](https://github.com/CICDToolbox/awesomebot/releases/v0.1.0)
+### [Unreleased](https://github.com/CICDToolbox/awesomebot/compare/v0.1.0...HEAD)
 
-> Released on October, 1st 2021
+- Update pipeline [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
-- The initial commit [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+- The initial commit [`[b8cb268]`](https://github.com/CICDToolbox/awesomebot/commit/b8cb26888e75c358cf0fe745cccb9fd9a76f7279)
 
