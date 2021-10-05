@@ -56,7 +56,6 @@ The following environment variables can be set in order to customise the script.
 | Name          | Purpose | Default Value |
 | ------------- | ------- | ------------- |
 | EXCLUDE_FILES | A comma separated list of files to exclude from being scanned. | Unset |
-| EXIT_ON_INSTALL_FAILURE | Exit the script if the install of the prerequisites fails (they might already exist). | False |
 | FLAGS         | Any command line options that are valid for awesome_bot. (You can also use 'FLAGS: "default" to use the default set of flags that we have defined, see below for more details.) | Unset |
 | REPORT_ONLY   | Generate the report but do not fail the build even if an error occurred. | False | 
 | SHOW_ERRORS   | Show the actual errors instead of just which files had errors. | False | 
@@ -76,7 +75,6 @@ jobs:
            ruby-version: 3.0	
       - name: Run Awesomebot
         env:
-          EXIT_ON_INSTALL_FAILURE: true
           EXCLUDE_FILES: "CHANGELOG.md"
           FLAGS: "--allow-redirect --allow-dupe"
           REPORT_ONLY: true

@@ -60,12 +60,10 @@ function install_prerequisites
             success "${INSTALL_COMMAND}"
         else
             fail "${INSTALL_COMMAND}" "${errors}" true
-            if [[ "${EXIT_ON_INSTALL_FAILURE}" == true ]]; then
-                exit $EXIT_VALUE
-            fi
+            exit $EXIT_VALUE
         fi
     else
-        success "${INSTALL_PACKAGE} is alredy installed"
+        success "${INSTALL_PACKAGE} is alredy installed - skipping install"
     fi
 }
 
@@ -153,19 +151,19 @@ function scan_files()
 
 function handle_parameters
 {
-    stage "Container Parameters"
+    stage "Parameters"
 
-    if [[ -n "${EXIT_ON_INSTALL_FAILURE-}" ]]; then
-        if [[ "${EXIT_ON_INSTALL_FAILURE}" != true ]]; then
-            EXIT_ON_INSTALL_FAILURE=false
-            echo " Exit on Install Failure: false"
+    if [[ -n "${REPORT_ONLY-}" ]]; then
+        if [[ "${REPORT_ONLY}" != true ]]; then
+            REPORT_ONLY=false
+            echo " Report Only: false"
         else
-            EXIT_ON_INSTALL_FAILURE=true
-            echo " Exit on Install Failure: true"
+            REPORT_ONLY=true
+            echo " Report Only: true"
         fi
     else
-        EXIT_ON_INSTALL_FAILURE=false
-        echo " Exit on Install Failure: false"
+        REPORT_ONLY=false
+        echo " Report Only: false"
     fi
 
     if [[ -n "${SHOW_ERRORS-}" ]]; then
@@ -181,19 +179,6 @@ function handle_parameters
         echo " Show Errors: false"
     fi
 
-    if [[ -n "${REPORT_ONLY-}" ]]; then
-        if [[ "${REPORT_ONLY}" != true ]]; then
-            REPORT_ONLY=false
-            echo " Report Only: false"
-        else
-            REPORT_ONLY=true
-            echo " Report Only: true"
-        fi
-    else
-        REPORT_ONLY=false
-        echo " Report Only: false"
-    fi
-
     if [[ -n "${EXCLUDE_FILES-}" ]]; then
         IFS=',' read -r -a exclude_list <<< "${EXCLUDE_FILES}"
         echo " Excluded: ${EXCLUDE_FILES}"
@@ -202,8 +187,6 @@ function handle_parameters
         declare -a exclude_list=()
         echo " Excluded: None"
     fi
-
-    stage "Application Parameters"
 
     if [[ -n "${FLAGS-}" ]]; then
         if [[ "${FLAGS}" == 'default' ]]; then
