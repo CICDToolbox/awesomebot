@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/awesomebot/compare/v0.1.0...HEAD)
 
-- Move logo to cdn [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+- update [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+
+- Move logo to cdn [`[0085676]`](https://github.com/CICDToolbox/awesomebot/commit/008567604e8b7197354d828102c97fefd97b4f6c)
 
 - Move logo to cdn [`[245a14f]`](https://github.com/CICDToolbox/awesomebot/commit/245a14ff5025097ef0e03b927b37035246afd56d)
 

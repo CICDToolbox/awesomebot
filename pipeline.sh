@@ -223,8 +223,6 @@ function handle_parameters
     else
         echo " Whitelist: None"
     fi
-
-    stage "Configuration"
 }
 
 # -------------------------------------------------------------------------------- #
