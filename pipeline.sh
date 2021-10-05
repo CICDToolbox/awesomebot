@@ -153,18 +153,26 @@ function handle_parameters
 {
     stage "Parameters"
 
-    if [[ -n "${REPORT_ONLY-}" ]]; then
-        if [[ "${REPORT_ONLY}" != true ]]; then
-            REPORT_ONLY=false
-            echo " Report Only: false"
-        else
-            REPORT_ONLY=true
-            echo " Report Only: true"
-        fi
+    if [[ -n "${REPORT_ONLY-}" ]] && [[ "${REPORT_ONLY}" = true ]]; then
+        REPORT_ONLY=true
+        echo " Report Only: true"
     else
         REPORT_ONLY=false
         echo " Report Only: false"
     fi
+
+#    if [[ -n "${REPORT_ONLY-}" ]]; then
+#        if [[ "${REPORT_ONLY}" != true ]]; then
+#            REPORT_ONLY=false
+#            echo " Report Only: false"
+#        else
+#            REPORT_ONLY=true
+#            echo " Report Only: true"
+#        fi
+#    else
+#        REPORT_ONLY=false
+#        echo " Report Only: false"
+#    fi
 
     if [[ -n "${SHOW_ERRORS-}" ]]; then
         if [[ "${SHOW_ERRORS}" != true ]]; then
