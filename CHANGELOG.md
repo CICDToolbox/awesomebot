@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - update [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
+- update [`[fdcb5d3]`](https://github.com/CICDToolbox/awesomebot/commit/fdcb5d3436bb564ec461348c5ffe4b0f4a1a0d80)
+
 - Move logo to cdn [`[0085676]`](https://github.com/CICDToolbox/awesomebot/commit/008567604e8b7197354d828102c97fefd97b4f6c)
 
 - Move logo to cdn [`[245a14f]`](https://github.com/CICDToolbox/awesomebot/commit/245a14ff5025097ef0e03b927b37035246afd56d)
