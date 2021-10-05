@@ -153,35 +153,7 @@ function scan_files()
 
 function handle_parameters
 {
-    stage "Parameters"
-
-    if [[ -n "${EXCLUDE_FILES-}" ]]; then
-        IFS=',' read -r -a exclude_list <<< "${EXCLUDE_FILES}"
-        echo " Excluded: ${EXCLUDE_FILES}"
-    else
-        # shellcheck disable=SC2034
-        declare -a exclude_list=()
-        echo " Excluded: None"
-    fi
-
-    if [[ -n "${FLAGS-}" ]]; then
-        if [[ "${FLAGS}" == 'default' ]]; then
-            FLAG_SET="${DEFAULT_FLAGS}"
-        else
-            FLAG_SET=$FLAGS
-        fi
-        echo " Flags: ${FLAG_SET}"
-    else
-        FLAG_SET=""
-        echo " Flags: None"
-    fi
-
-    if [[ -n "${WHITELIST-}" ]]; then
-        FLAG_SET="${FLAG_SET} --white-list ${WHITELIST//[[:blank:]]/}"
-        echo " Whitelist: ${WHITELIST}"
-    else
-        echo " Whitelist: None"
-    fi
+    stage "Container Parameters"
 
     if [[ -n "${EXIT_ON_INSTALL_FAILURE-}" ]]; then
         if [[ "${EXIT_ON_INSTALL_FAILURE}" != true ]]; then
@@ -221,6 +193,38 @@ function handle_parameters
         REPORT_ONLY=false
         echo " Report Only: false"
     fi
+
+    if [[ -n "${EXCLUDE_FILES-}" ]]; then
+        IFS=',' read -r -a exclude_list <<< "${EXCLUDE_FILES}"
+        echo " Excluded: ${EXCLUDE_FILES}"
+    else
+        # shellcheck disable=SC2034
+        declare -a exclude_list=()
+        echo " Excluded: None"
+    fi
+
+    stage "Application Parameters"
+
+    if [[ -n "${FLAGS-}" ]]; then
+        if [[ "${FLAGS}" == 'default' ]]; then
+            FLAG_SET="${DEFAULT_FLAGS}"
+        else
+            FLAG_SET=$FLAGS
+        fi
+        echo " Flags: ${FLAG_SET}"
+    else
+        FLAG_SET=""
+        echo " Flags: None"
+    fi
+
+    if [[ -n "${WHITELIST-}" ]]; then
+        FLAG_SET="${FLAG_SET} --white-list ${WHITELIST//[[:blank:]]/}"
+        echo " Whitelist: ${WHITELIST}"
+    else
+        echo " Whitelist: None"
+    fi
+
+    stage "Configuration"
 }
 
 # -------------------------------------------------------------------------------- #
