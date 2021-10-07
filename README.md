@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://wolfsoftware.com">
+    <a href="https://github.com/WolfSoftware">
         <img src="https://cdn.wolfsoftware.com/assets/images/general/logos/256/black-and-white-circle.png" alt="Wolf Software Logo" />
     </a>
     <br /><br />
@@ -152,13 +152,3 @@ AND
 
 [[ ${filename} =~ \.(txt|md)$ ]]
 ```
-
-<p align="right">
-    <a href="https://github.com/TGWolf">
-        <img src="https://img.shields.io/badge/Created%20by%20Wolf%20Software-blue?style=for-the-badge" />
-    </a>
-    <br />
-    <a href="https://ko-fi.com/wolfsoftware">
-        <img src="https://img.shields.io/badge/Ko%20Fi-black?style=for-the-badge&logo=ko-fi&logoColor=white" />
-    </a>
-</p>
