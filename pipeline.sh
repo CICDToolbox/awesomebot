@@ -42,7 +42,7 @@ CURRENT_STAGE=0
 # DEFAULT_FLAGS - The default flags to use if the user sets flags to "default".    #
 # -------------------------------------------------------------------------------- #
 
-DEFAULT_FLAGS="--allow-redirect --allow-dupe --allow-ssl --skip-save-results --set-timeout 10 --allow 429"
+DEFAULT_FLAGS="--allow-redirect --allow-dupe --skip-save-results --set-timeout 10 --allow 429"
 
 # -------------------------------------------------------------------------------- #
 # Install Prerequisites                                                            #
@@ -161,27 +161,9 @@ function handle_parameters
         echo " Report Only: false"
     fi
 
-#    if [[ -n "${REPORT_ONLY-}" ]]; then
-#        if [[ "${REPORT_ONLY}" != true ]]; then
-#            REPORT_ONLY=false
-#            echo " Report Only: false"
-#        else
-#            REPORT_ONLY=true
-#            echo " Report Only: true"
-#        fi
-#    else
-#        REPORT_ONLY=false
-#        echo " Report Only: false"
-#    fi
-
-    if [[ -n "${SHOW_ERRORS-}" ]]; then
-        if [[ "${SHOW_ERRORS}" != true ]]; then
-            SHOW_ERRORS=false
-            echo " Show Errors: false"
-        else
-            SHOW_ERRORS=true
-            echo " Show Errors: true"
-        fi
+    if [[ -n "${SHOW_ERRORS-}" ]] && [[ "${SHOW_ERRORS}" = true ]]; then
+        SHOW_ERRORS=true
+        echo " Show Errors: true"
     else
         SHOW_ERRORS=false
         echo " Show Errors: false"
