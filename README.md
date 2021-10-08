@@ -2,7 +2,7 @@
     <a href="https://github.com/CICDToolbox">
         <img src="https://cdn.wolfsoftware.com/assets/images/github/organisations/cicdtoolbox/black-and-white-circle-256.png" alt="CICDToolbox Logo" />
     </a>
-    <br /><br />
+    <br />
     <a href="https://github.com/CICDToolbox/awesomebot/actions/workflows/pipeline.yml">
         <img src="https://img.shields.io/github/workflow/status/CICDToolbox/awesomebot/pipeline/master?style=for-the-badge" alt="Github Build Status">
     </a>
