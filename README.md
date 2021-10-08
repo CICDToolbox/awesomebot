@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="https://github.com/WolfSoftware">
-        <img src="https://cdn.wolfsoftware.com/assets/images/general/logos/256/black-and-white-circle.png" alt="Wolf Software Logo" />
+    <a href="https://github.com/CICDToolbox/">
+        <img src="https://cdn.wolfsoftware.com/assets/images/github/organisations/cicdtoolbox/black-and-white-circle-256.png" alt="Wolf Software Logo" />
     </a>
     <br /><br />
     <a href="https://github.com/CICDToolbox/awesomebot/actions/workflows/pipeline.yml">
@@ -26,7 +26,7 @@
         <img src="https://img.shields.io/badge/Get%20Support-blue?style=for-the-badge" />
     </a>
     <br />
-    <a href="https://github.com/TGWolf">
+    <a href="https://wolfsoftware.com">
         <img src="https://img.shields.io/badge/Created%20by%20Wolf%20Software-blue?style=for-the-badge" />
     </a>
 </p>
