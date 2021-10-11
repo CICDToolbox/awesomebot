@@ -199,7 +199,7 @@ function handle_parameters
     fi
 
     if [[ "${parameters}" != true ]]; then
-        echo "No parameters given"
+        echo " No parameters given"
     fi
 }
 
