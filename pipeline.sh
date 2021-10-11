@@ -151,31 +151,33 @@ function scan_files()
 
 function handle_parameters
 {
+    local parameters=false
+
     stage "Parameters"
 
     if [[ -n "${REPORT_ONLY-}" ]] && [[ "${REPORT_ONLY}" = true ]]; then
         REPORT_ONLY=true
         echo " Report Only: true"
+        parameters=true
     else
         REPORT_ONLY=false
-        echo " Report Only: false"
     fi
 
     if [[ -n "${SHOW_ERRORS-}" ]] && [[ "${SHOW_ERRORS}" = true ]]; then
         SHOW_ERRORS=true
         echo " Show Errors: true"
+        parameters=true
     else
         SHOW_ERRORS=false
-        echo " Show Errors: false"
     fi
 
     if [[ -n "${EXCLUDE_FILES-}" ]]; then
         IFS=',' read -r -a exclude_list <<< "${EXCLUDE_FILES}"
         echo " Excluded: ${EXCLUDE_FILES}"
+        parameters=true
     else
         # shellcheck disable=SC2034
         declare -a exclude_list=()
-        echo " Excluded: None"
     fi
 
     if [[ -n "${FLAGS-}" ]]; then
@@ -185,16 +187,19 @@ function handle_parameters
             FLAG_SET=$FLAGS
         fi
         echo " Flags: ${FLAG_SET}"
+        parameters=true
     else
         FLAG_SET=""
-        echo " Flags: None"
     fi
 
     if [[ -n "${WHITELIST-}" ]]; then
         FLAG_SET="${FLAG_SET} --white-list ${WHITELIST//[[:blank:]]/}"
         echo " Whitelist: ${WHITELIST}"
-    else
-        echo " Whitelist: None"
+        parameters=true
+    fi
+
+    if [[ "${parameters}" != true ]]; then
+        echo "No parameters given"
     fi
 }
 

@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - update [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
+- update [`[22a1cac]`](https://github.com/CICDToolbox/awesomebot/commit/22a1cac7e003b713c64068612e56524303682f23)
+
 - update [`[534f8c1]`](https://github.com/CICDToolbox/awesomebot/commit/534f8c18c6d73ddc9c2d177a82f9c3ba6b24e851)
 
 - update [`[bdb5659]`](https://github.com/CICDToolbox/awesomebot/commit/bdb5659ac58d42ddd2d4add72de20f00b631223b)
