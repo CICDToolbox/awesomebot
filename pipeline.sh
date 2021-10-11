@@ -63,7 +63,7 @@ function install_prerequisites
             exit $EXIT_VALUE
         fi
     else
-        success "${INSTALL_PACKAGE} is alredy installed - skipping install"
+        success "${INSTALL_PACKAGE} is alredy installed"
     fi
 }
 
