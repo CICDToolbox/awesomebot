@@ -63,7 +63,7 @@ The following environment variables can be set in order to customise the script.
 | FLAGS         | Any command line options that are valid for awesome_bot. (You can also use 'FLAGS: "default" to use the default set of flags that we have defined, see below for more details.) | Unset |
 | REPORT_ONLY   | Generate the report but do not fail the build even if an error occurred. | False | 
 | SHOW_ERRORS   | Show the actual errors instead of just which files had errors. | False | 
-| WHITELIST     | A comma separated list of to be excluded from being checked.  | Unset |
+| WHITELIST     | A comma separated list of files to be excluded from being checked.  | Unset |
 
 You can use any combination of the above settings.
 
