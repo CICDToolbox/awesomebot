@@ -26,7 +26,7 @@ set -Eeuo pipefail
 # CURRENT_STAGE - The current stage used for the reporting output.                 #
 # -------------------------------------------------------------------------------- #
 
-INSTALL_PACKAGE='awesome_bot'
+INSTALL_PACKAGE='awesome_bot22'
 INSTALL_COMMAND="gem install --silent ${INSTALL_PACKAGE}"
 
 TEST_COMMAND='awesome_bot'
@@ -54,6 +54,7 @@ function install_prerequisites
 {
     stage "Install Prerequisites"
 
+    set +e
     if ! command -v ${INSTALL_PACKAGE} &> /dev/null
     then
         if errors=$( ${INSTALL_COMMAND} 2>&1 ); then
@@ -65,6 +66,7 @@ function install_prerequisites
     else
         success "${INSTALL_PACKAGE} is alredy installed"
     fi
+    set -e
 }
 
 # -------------------------------------------------------------------------------- #
