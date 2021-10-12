@@ -27,7 +27,7 @@ set -Eeuo pipefail
 # -------------------------------------------------------------------------------- #
 
 INSTALL_PACKAGE='awesome_bot'
-INSTALL_COMMAND="gem install ${INSTALL_PACKAGE}"
+INSTALL_COMMAND="gem install --quiet ${INSTALL_PACKAGE}"
 
 TEST_COMMAND='awesome_bot'
 FILE_TYPE_SEARCH_PATTERN='^(HTML document|ASCII text)'
