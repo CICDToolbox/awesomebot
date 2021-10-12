@@ -26,7 +26,7 @@ set -Eeuo pipefail
 # CURRENT_STAGE - The current stage used for the reporting output.                 #
 # -------------------------------------------------------------------------------- #
 
-INSTALL_PACKAGE='awesome_bot22'
+INSTALL_PACKAGE='awesome_bot'
 INSTALL_COMMAND="gem install ${INSTALL_PACKAGE}"
 
 TEST_COMMAND='awesome_bot'
