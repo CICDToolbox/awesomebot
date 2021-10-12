@@ -17,7 +17,7 @@ set -Eeuo pipefail
 # -------------------------------------------------------------------------------- #
 # Global Variables                                                                 #
 # -------------------------------------------------------------------------------- #
-# INSTALL_PACKAGE - The name of the package to install.                            #
+# GEM_NAME - The name of the Ruby Gem to install.                                  #
 # INSTALL_COMMAND - The command to execute to do the install.                      #
 # TEST_COMMAND - The command to execute to perform the test.                       #
 # FILE_TYPE_SEARCH_PATTERN - The pattern used to match file types.                 #
@@ -26,8 +26,8 @@ set -Eeuo pipefail
 # CURRENT_STAGE - The current stage used for the reporting output.                 #
 # -------------------------------------------------------------------------------- #
 
-INSTALL_PACKAGE='awesome_bot'
-INSTALL_COMMAND="gem install --quiet ${INSTALL_PACKAGE}"
+GEM_NAME='awesome_bot'
+INSTALL_COMMAND="gem install --quiet ${GEM_NAME}"
 
 TEST_COMMAND='awesome_bot'
 FILE_TYPE_SEARCH_PATTERN='^(HTML document|ASCII text)'
@@ -75,8 +75,8 @@ function install_prerequisites
 
 function get_version_information
 {
-    VERSION=$(gem list | grep "^${INSTALL_PACKAGE} " | sed 's/[^0-9.]*\([0-9.]*\).*/\1/')
-    BANNER="Run ${INSTALL_PACKAGE} (v${VERSION})"
+    VERSION=$(gem list | grep "^${GEM_NAME} " | sed 's/[^0-9.]*\([0-9.]*\).*/\1/')
+    BANNER="Run ${TEST_COMMAND} (v${VERSION})"
 }
 
 # -------------------------------------------------------------------------------- #

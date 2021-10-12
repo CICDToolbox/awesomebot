@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - New logo [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
+- New logo [`[3f41179]`](https://github.com/CICDToolbox/awesomebot/commit/3f411794b682fb7f8eb39de061b13ab19d54ba39)
+
 - New logo [`[d5c8de1]`](https://github.com/CICDToolbox/awesomebot/commit/d5c8de19d7db104364091b2d4c6e344cd57d1e1f)
 
 - update [`[8174ea9]`](https://github.com/CICDToolbox/awesomebot/commit/8174ea9f77fd61766f81d8719252485eee1c6d68)
