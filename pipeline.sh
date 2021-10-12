@@ -54,7 +54,7 @@ function install_prerequisites
 {
     stage "Install Prerequisites"
 
-    if ! command -v ${INSTALL_PACKAGE} &> /dev/null
+    if ! command -v ${TEST_COMMAND} &> /dev/null
     then
         if errors=$( ${INSTALL_COMMAND} 2>&1 ); then
             success "${INSTALL_COMMAND}"
@@ -63,7 +63,7 @@ function install_prerequisites
             exit $EXIT_VALUE
         fi
     else
-        success "${INSTALL_PACKAGE} is alredy installed"
+        success "${TEST_COMMAND} is alredy installed"
     fi
 }
 
