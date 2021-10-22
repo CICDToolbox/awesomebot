@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - update readme [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
+- update readme [`[8bc2f67]`](https://github.com/CICDToolbox/awesomebot/commit/8bc2f6736cba7db8d111a3fe1f27495856750a19)
+
 - update readme [`[5b52c6b]`](https://github.com/CICDToolbox/awesomebot/commit/5b52c6b2d49d065ef7a3639fd2a513013973cdc2)
 
 - Add regex to exclude files [`[90125dd]`](https://github.com/CICDToolbox/awesomebot/commit/90125dda0fa5108a2215e69f34fbc4fe2afb2429)

@@ -78,12 +78,6 @@ jobs:
         with:
            ruby-version: 3.0	
       - name: Run Awesomebot
-        env:
-          EXCLUDE_FILES: "CHANGELOG.md"
-          FLAGS: "--allow-redirect --allow-dupe"
-          REPORT_ONLY: true
-          SHOW_ERRORS: true
-          WHITELIST: "https://img.shields.io"
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/awesomebot/master/pipeline.sh)
 ```
 
