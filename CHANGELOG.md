@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/awesomebot/compare/v0.1.0...HEAD)
 
-- Add regex to exclude files [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+- update readme [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+
+- Add regex to exclude files [`[90125dd]`](https://github.com/CICDToolbox/awesomebot/commit/90125dda0fa5108a2215e69f34fbc4fe2afb2429)
 
 - New logo [`[0271398]`](https://github.com/CICDToolbox/awesomebot/commit/0271398915094ec3d9e8f1fa8ae08d2dd7d9bcfd)
 
