@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/awesomebot/compare/v0.1.0...HEAD)
 
-- shellcheck [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+- Fix find command [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
+
+- shellcheck [`[d1704f1]`](https://github.com/CICDToolbox/awesomebot/commit/d1704f1ed8a6b2dbbe878c7d6ac2781e2cfcd41c)
 
 - update readme [`[4e3f622]`](https://github.com/CICDToolbox/awesomebot/commit/4e3f622bd70933fef058305cef4744a6a0d2ef1f)
 
