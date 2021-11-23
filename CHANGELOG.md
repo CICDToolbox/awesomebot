@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Fix find command [`[head]`](https://github.com/CICDToolbox/awesomebot/commit/)
 
+- Fix find command [`[b27045f]`](https://github.com/CICDToolbox/awesomebot/commit/b27045f17a4829065c31e57fc073c93f4023093e)
+
 - Fix find command [`[569a8a7]`](https://github.com/CICDToolbox/awesomebot/commit/569a8a7c9ea9eeb74b5a4b4dc1180d314f490896)
 
 - shellcheck [`[d1704f1]`](https://github.com/CICDToolbox/awesomebot/commit/d1704f1ed8a6b2dbbe878c7d6ac2781e2cfcd41c)
