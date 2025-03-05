@@ -46,9 +46,6 @@ BASE_COMMAND="${TEST_COMMAND[0]}"
 # Version Banner - What to show on the version banned
 BANNER_NAME="${BASE_COMMAND}"
 
-# Version Banner - What to show on the version banned
-BANNER_NAME="${TEST_COMMAND[*]}"
-
 # File type to match (comes from file -b) [Regex based]
 FILE_TYPE_SEARCH_PATTERN='^(HTML document|ASCII text)'
 
