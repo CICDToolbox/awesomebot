@@ -271,7 +271,7 @@ function install_prerequisites()
             success "${INSTALL_COMMAND[*]}"
         fi
     else
-        if ! command -v "${BASE_COMMAND}" > /dev/null; then
+        if ! "${BASE_COMMAND}" --help > /dev/null 2>&1; then
             # shellcheck disable=SC2310
             if ! errors=$(run_command "${INSTALL_COMMAND[@]}"); then
                 fail "${INSTALL_COMMAND[*]}" "${errors}" true
